@@ -2,7 +2,7 @@
   "source": ["tokens/*.json"],
   "platforms": {
     "less": {
-      "transformGroup": "less",
+      "transformGroup": ["less"],
       "buildPath": "build/less/",
       "files": [{
         "destination": "_variables.less",

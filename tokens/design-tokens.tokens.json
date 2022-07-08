@@ -3,14 +3,12 @@
     "button-primary": {
       "description": null,
       "type": "custom-radius",
-      "value": {
-        "smoothing": 0,
-        "topLeft": 10,
-        "topRight": 10,
-        "bottomLeft": 10,
-        "bottomRight": 10
-      },
-      "extensions": {
+      "smoothing": { "value": 0 },
+      "topLeft": { "value": 10 },
+      "topRight": { "value": 10 },
+      "bottomLeft": { "value": 10 },
+      "bottomRight": { "value": 10 },
+       "extensions": {
         "org.lukasoppermann.figmaDesignTokens": {
           "exportKey": "radius"
         }
