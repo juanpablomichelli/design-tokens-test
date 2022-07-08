@@ -35,7 +35,7 @@
         "bg": {
           "description": "",
           "type": "color",
-          "value": "#ff6060ff",
+          "value": "#6cff60ff",
           "blendMode": "normal",
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
