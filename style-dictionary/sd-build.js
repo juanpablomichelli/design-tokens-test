@@ -7,7 +7,7 @@ StyleDictionary.registerTransform({
         return token.attributes.category === 'radii' && token.value != 0;
     },
     transformer: function(token){
-        return token.value + 'px';
+        return `${token.value}px`;
     }
 })
 
