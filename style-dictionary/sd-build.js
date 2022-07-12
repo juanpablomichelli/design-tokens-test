@@ -1,4 +1,5 @@
 const StyleDictionary = require('style-dictionary').extend('./style-dictionary/sd-config.json');
+const webRadius = require('./web/webRadius')
 
 //Register transform for adding px and percentages where required
 StyleDictionary.registerTransform({
@@ -23,21 +24,16 @@ StyleDictionary.registerTransform({
     }
 })
 
-//Transform for adding px to radius tokens
 StyleDictionary.registerTransform({
-    name: 'radii/px',
-    type: 'value',
-    matcher: function(token){
-        return token.attributes.category === 'radii' && token.value != 0;
-    },
-    transformer: function(token){
-        return `${token.value}px`;
-    }
+    name: webRadius.name,
+    type: webRadius.type,
+    matcher: webRadius.matcher,
+    transformer: webRadius.transformer
 })
 
 StyleDictionary.registerTransformGroup({
     name: "less",
-    transforms: StyleDictionary.transformGroup["less"].concat(['radii/px', 'size/px','size/percent'])
+    transforms: StyleDictionary.transformGroup["less"].concat(['size/px','size/percent','custom/radius'])
 })
 
 StyleDictionary.buildAllPlatforms();

@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "style-dictionary build --config ./style-dictionary/sd-build.js"
+    "build": "node ./style-dictionary/sd-build.js"
   },
   "devDependencies": {
     "style-dictionary": "^3.7.1"
